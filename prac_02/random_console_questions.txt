@@ -1,0 +1,24 @@
+import random
+print(random.randint(5, 20)         #line 1
+print(random.randrange(3, 10, 2))   #line 2
+print(random.uniform(2.5, 5.5))     #line 3
+
+What did you see on line 1?
+The number that was produced on line 1 would be an integer between 5 and 20.
+What was the smallest number you could have seen, what was the largest?
+The smallest number you could have seen on line 1 would be 5.
+The largest number you could have seen on line 1 would be 20.
+
+What did you see on line 2?
+The number that was produced on line 2 would be an odd number between 3 and 10.
+What was the smallest number you could have seen, what was the largest?
+The smallest number you could have seen on line 2 would be 3.
+The largest number you could have seen on line 2 would be 9.
+Could line 2 have produced a 4?
+No
+
+What did you see on line 3?
+The number that was produced on line 3 would be a floating point number between 2.5 and 5.5.
+What was the smallest number you could have seen, what was the largest?
+The smallest number you could have seen on line 3 would be 2.5.
+The largest number you could have seen on line 3 would be 5.5.
