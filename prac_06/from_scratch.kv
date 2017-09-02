@@ -3,16 +3,21 @@ BoxLayout:
     BoxLayout:
         orientation: 'horizontal'
         TextInput:
-
+            size_hint: 5, 1
+            id: miles_input
+            text: ''
         BoxLayout:
             orientation: 'vertical'
             Button:
                 text: 'Up'
+                on_press: handle_increment_up(1)
             Button:
                 text: 'Down'
+                on_press: handle_increment_down(-1)
     Button:
         text: 'Convert m to km'
-
+        on_press: app.handle_convert(int(miles_input.text))
     Label:
+        id: output_label
         text: 'Enter a number'
         color: (1, 1, 0, 1)
