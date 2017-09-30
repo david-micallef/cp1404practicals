@@ -14,12 +14,3 @@ class SilverServiceTaxi(Taxi):
 
     def get_fare(self):
         return self.flagfall + super().get_fare()
-
-    # def drive(self, distance):
-    #     return super().drive(distance)
-
-    # def price_distance(self):
-    #     return self.fanciness * Taxi.price_per_km
-
-
-
