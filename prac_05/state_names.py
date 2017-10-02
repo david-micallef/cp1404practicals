@@ -10,15 +10,13 @@ STATE_NAMES = {"QLD": "Queensland", "NSW": "New South Wales", "NT": "Northern Te
 # print(STATE_NAMES)
 
 for short_name, full_name in STATE_NAMES.items():
-    print("{:<4} is {:<35}".format(short_name, full_name))
+    print("{:<3} is {:<35}".format(short_name, full_name))
 
 
-state = input("Enter short state: ")
-state = state.upper()
+state = input("Enter short state: ").upper()
 while state != "":
     if state in STATE_NAMES:
         print(state, "is", STATE_NAMES[state])
     else:
         print("Invalid short state")
-    state = input("Enter short state: ")
-    state = state.upper()
+    state = input("Enter short state: ").upper()
