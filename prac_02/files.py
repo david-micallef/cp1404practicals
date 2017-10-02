@@ -1,36 +1,40 @@
 def main():
-    calculate_question_one()
-    calculate_question_two()
-    calculate_question_three()
-    calculate_question_four()
+    write_name_to_file()
+    read_name_from_file()
+    add_numbers_from_file()
+    add_any_numbers_from_file()
 
-def calculate_question_one():
+
+def write_name_to_file():
     out_file = open("name.txt", "w")
     username = (str(input("Please enter your name: ")))
-    print (username, file=out_file)
+    print(username, file=out_file)
     out_file.close()
 
-def calculate_question_two():
+
+def read_name_from_file():
     in_file = open("name.txt", "r")
-    print("Your name is",in_file.read())
+    print("Your name is", in_file.read())
     in_file.close()
 
-def calculate_question_three():
+
+def add_numbers_from_file():
     add_numbers = 0
-    number_file = open("numbers.txt", "r")
-    number_list = number_file.readlines()
+    in_file = open("numbers.txt", "r")
+    number_list = in_file.readlines()
     for i in range(len(number_list)):
         add_numbers += int(number_list[i])
     print(add_numbers)
-    number_file.close()
+    in_file.close()
 
-def calculate_question_four():
+
+def add_any_numbers_from_file():
     extended_add_numbers = 0
-    extend_file = open("extended.txt", "r")
-    extend_list = extend_file.readlines()
+    in_file = open("extended.txt", "r")
+    extend_list = in_file.readlines()
     for i in range(len(extend_list)):
         extended_add_numbers += int(extend_list[i])
     print(extended_add_numbers)
-    extend_file.close()
+    in_file.close()
 
 main()
