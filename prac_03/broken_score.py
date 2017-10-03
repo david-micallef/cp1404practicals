@@ -8,11 +8,11 @@ Broken program to determine score status
 
 def main():
     score = float(input("Enter score: "))
-    score_text = sort_score(score)
+    score_text = determine_score(score)
     print(score_text)
 
 
-def sort_score(score):
+def determine_score(score):
     if score < 0 or score > 100:
         return "Invalid Score"
     elif score >= 90:
@@ -22,7 +22,4 @@ def sort_score(score):
     else:
         return "Bad"
 
-
 main()
-
-
