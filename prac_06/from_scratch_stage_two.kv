@@ -1,0 +1,21 @@
+BoxLayout:
+    orientation: 'vertical'
+    BoxLayout:
+        orientation: 'horizontal'
+        TextInput:
+            size_hint: 5, 1
+            id: miles_input
+            text: '0.0'
+            on_text: app.handle_convert()
+        BoxLayout:
+            orientation: 'vertical'
+            Button:
+                text: 'Up'
+                on_press: app.handle_increment(1)
+            Button:
+                text: 'Down'
+                on_press: app.handle_increment(-1)
+    Label:
+        id: output_label
+        text: 'Enter a number'
+        color: (1, 1, 0, 1)
