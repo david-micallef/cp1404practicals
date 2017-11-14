@@ -19,7 +19,7 @@ print(do_it(5))
 def do_something(n):
     """Print the squares of positive numbers from n down to 0."""
     if n < 0:
-        return 0
+        return
     print(n ** 2)
     do_something(n - 1)
 
@@ -39,11 +39,11 @@ print(test)
 entered_number = int(input("Please enter the number of rows: "))
 
 
-def from_scratch(n):
+def calculate_number_of_blocks(n):
     if n < 0:
         return 0
     else:
-        return n + from_scratch(n - 1)
+        return n + calculate_number_of_blocks(n - 1)
 
-print(from_scratch(entered_number))
+print(calculate_number_of_blocks(entered_number))
 
